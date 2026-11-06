@@ -6,7 +6,7 @@
 <!-- ============ DIGITAÇÃO ============ -->
 <p align="center">
   <a href="https://github.com/rian-ribeiro-dev">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3200&pause=900&color=38BDF8&center=true&vCenter=true&width=560&height=40&lines=Engenharia+de+Software+na+UDF+%C2%B7+2%C2%BA+semestre;Backend+em+forma%C3%A7%C3%A3o%2C+um+commit+de+cada+vez;Hoje%3A+C+e+Python.+Amanh%C3%A3%3A+o+que+o+est%C3%A1gio+pedir.;Aberto+%C3%A0+primeira+oportunidade+de+est%C3%A1gio+em+TI" alt="Animação de digitação" />
+    <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=20&duration=3800&pause=1600&color=38BDF8&center=true&vCenter=true&width=620&height=48&letterSpacing=0.5px&lines=Estudante+de+Engenharia+de+Software;Desenvolvedor+Backend+em+forma%C3%A7%C3%A3o;Explorando+Python+e+desenvolvimento+de+software;Aprendendo%2C+criando+e+evoluindo+atrav%C3%A9s+do+c%C3%B3digo;Em+busca+da+primeira+oportunidade+em+TI" alt="Estudante de Engenharia de Software · Desenvolvedor Backend em formação · Em busca da primeira oportunidade em TI" />
   </a>
 </p>
 
@@ -30,7 +30,7 @@ Estou procurando meu **primeiro estágio em TI**, e não estou preso a uma área
 curso      Engenharia de Software · UDF
 semestre   2º  (conclusão prevista para 2029)
 foco       backend
-agora      algoritmos, estruturas de controle, C e Python
+agora      algoritmos, estruturas de controle e Python
 procura    estágio em TI, qualquer área
 ```
 
@@ -39,14 +39,14 @@ procura    estágio em TI, qualquer área
 ## `02` tecnologias
 
 <p align="center">
-  <img src="./assets/tech.svg" alt="C, Python, Git, GitHub, GitHub Actions, VS Code" />
+  <img src="./assets/tech.svg" alt="Python, Git, GitHub, GitHub Actions, VS Code" />
 </p>
 
 <div align="center">
 
 | linguagens | ferramentas |
 | :--: | :--: |
-| C · Python | Git · GitHub · GitHub Actions (CI/CD) · VS Code |
+| Python | Git · GitHub · GitHub Actions (CI/CD) · VS Code |
 
 <sub>nível acadêmico: cada item dessa lista aparece em pelo menos um dos meus repositórios.</sub>
 
