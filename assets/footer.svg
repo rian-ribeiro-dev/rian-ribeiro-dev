@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="120" viewBox="0 0 1200 120" role="img" aria-label="Obrigado pela visita">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+    <clipPath id="r"><rect width="1200" height="120" rx="18"/></clipPath>
+    <style>.m{font-family:Consolas,'SFMono-Regular',Menlo,'Courier New',monospace}.c{animation:b 1.1s steps(1) infinite}@keyframes b{50%{opacity:0}}</style>
+  </defs>
+  <g clip-path="url(#r)"><rect width="1200" height="120" fill="#0D1117"/>
+  <path d="M0 96 C 200 70, 400 118, 600 92 S 1000 70, 1200 96 V120 H0Z" fill="#1F6FEB" fill-opacity=".14"/>
+  <path d="M0 106 C 220 88, 420 124, 640 104 S 1020 90, 1200 108 V120 H0Z" fill="#F472B6" fill-opacity=".10"/></g>
+  <rect x=".5" y=".5" width="1199" height="119" rx="18" fill="none" stroke="#30363D"/>
+  <text x="600" y="54" text-anchor="middle" class="m" font-size="18" fill="#C9D1D9">obrigado pela visita<tspan fill="#F472B6">;</tspan><tspan fill="#F472B6" class="c"> ▍</tspan></text>
+  <rect x="560" y="70" width="80" height="2" rx="1" fill="url(#g)"/>
+</svg>

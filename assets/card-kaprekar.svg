@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="190" viewBox="0 0 400 190" role="img" aria-label="Constante de Kaprekar">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+    <radialGradient id="glow" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="#1F6FEB" stop-opacity=".22"/><stop offset="1" stop-color="#1F6FEB" stop-opacity="0"/></radialGradient>
+    <style>.s{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}.m{font-family:Consolas,'SFMono-Regular',Menlo,'Courier New',monospace}</style>
+  </defs>
+  <rect x=".5" y=".5" width="399" height="189" rx="14" fill="#0D1117" stroke="#30363D"/>
+  <rect x=".5" y=".5" width="399" height="189" rx="14" fill="url(#glow)"/>
+  <rect x="22" y="22" width="4" height="22" rx="2" fill="url(#g)"/>
+  <text x="36" y="39" class="s" font-size="17" font-weight="700" fill="#E6EDF3">Constante de Kaprekar</text>
+  <circle cx="304.8" cy="33" r="4" fill="#F472B6"/>
+  <text x="378" y="38" text-anchor="end" class="m" font-size="12.5" fill="#C9D1D9">Python 3</text>
+  <text x="22" y="78" class="s" font-size="13.5" fill="#8B949E">Leva números de 4 dígitos até 6174 mexendo nos</text>
+  <text x="22" y="99" class="s" font-size="13.5" fill="#8B949E">dígitos só com // e %, sem strings, listas ou</text>
+  <text x="22" y="120" class="s" font-size="13.5" fill="#8B949E">sorted(). A ordenação também é feita à mão.</text>
+  <rect x="22" y="146" width="92" height="24" rx="12" fill="#1F6FEB" fill-opacity=".12" stroke="#1F6FEB" stroke-opacity=".45"/>
+  <text x="68" y="162" text-anchor="middle" class="m" font-size="11.5" fill="#79C0FF">aritmética</text>
+  <rect x="122.0" y="146" width="99" height="24" rx="12" fill="#1F6FEB" fill-opacity=".12" stroke="#1F6FEB" stroke-opacity=".45"/>
+  <text x="172" y="162" text-anchor="middle" class="m" font-size="11.5" fill="#79C0FF">bubble sort</text>
+  <rect x="229.2" y="146" width="63" height="24" rx="12" fill="#1F6FEB" fill-opacity=".12" stroke="#1F6FEB" stroke-opacity=".45"/>
+  <text x="261" y="162" text-anchor="middle" class="m" font-size="11.5" fill="#79C0FF">stdlib</text>
+  <text x="378" y="163" text-anchor="end" class="m" font-size="12" fill="#F472B6">ver repo →</text>
+</svg>

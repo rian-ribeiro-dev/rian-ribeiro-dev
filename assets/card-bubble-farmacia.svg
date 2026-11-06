@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="190" viewBox="0 0 400 190" role="img" aria-label="Bubble Sort Farmácia">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#58A6FF"/><stop offset="1" stop-color="#F472B6"/></linearGradient>
+    <radialGradient id="glow" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="#1F6FEB" stop-opacity=".22"/><stop offset="1" stop-color="#1F6FEB" stop-opacity="0"/></radialGradient>
+    <style>.s{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}.m{font-family:Consolas,'SFMono-Regular',Menlo,'Courier New',monospace}</style>
+  </defs>
+  <rect x=".5" y=".5" width="399" height="189" rx="14" fill="#0D1117" stroke="#30363D"/>
+  <rect x=".5" y=".5" width="399" height="189" rx="14" fill="url(#glow)"/>
+  <rect x="22" y="22" width="4" height="22" rx="2" fill="url(#g)"/>
+  <text x="36" y="39" class="s" font-size="17" font-weight="700" fill="#E6EDF3">Bubble Sort Farmácia</text>
+  <circle cx="341.8" cy="33" r="4" fill="#F472B6"/>
+  <text x="378" y="38" text-anchor="end" class="m" font-size="12.5" fill="#C9D1D9">C99</text>
+  <text x="22" y="78" class="s" font-size="13.5" fill="#8B949E">Ordena 12 medicamentos pelos dias até vencer</text>
+  <text x="22" y="99" class="s" font-size="13.5" fill="#8B949E">e classifica cada um como OK, ATENÇÃO ou</text>
+  <text x="22" y="120" class="s" font-size="13.5" fill="#8B949E">URGENTE: primeiro que vence, primeiro que sai.</text>
+  <rect x="22" y="146" width="99" height="24" rx="12" fill="#1F6FEB" fill-opacity=".12" stroke="#1F6FEB" stroke-opacity=".45"/>
+  <text x="72" y="162" text-anchor="middle" class="m" font-size="11.5" fill="#79C0FF">Bubble Sort</text>
+  <rect x="129.2" y="146" width="49" height="24" rx="12" fill="#1F6FEB" fill-opacity=".12" stroke="#1F6FEB" stroke-opacity=".45"/>
+  <text x="154" y="162" text-anchor="middle" class="m" font-size="11.5" fill="#79C0FF">PVPS</text>
+  <rect x="186.0" y="146" width="78" height="24" rx="12" fill="#1F6FEB" fill-opacity=".12" stroke="#1F6FEB" stroke-opacity=".45"/>
+  <text x="225" y="162" text-anchor="middle" class="m" font-size="11.5" fill="#79C0FF">em grupo</text>
+  <text x="378" y="163" text-anchor="end" class="m" font-size="12" fill="#F472B6">ver repo →</text>
+</svg>
