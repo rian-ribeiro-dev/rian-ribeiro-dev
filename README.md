@@ -70,8 +70,8 @@ procura    estágio em TI, qualquer área
 ## `04` estatísticas
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=rian-ribeiro-dev&show_icons=true&hide_border=true&include_all_commits=true&rank_icon=github&locale=pt-br&bg_color=0D1117&title_color=58A6FF&icon_color=F472B6&text_color=C9D1D9&ring_color=F472B6" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=rian-ribeiro-dev&layout=compact&langs_count=6&hide_border=true&locale=pt-br&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9" alt="Top Languages" />
+  <img src="https://raw.githubusercontent.com/rian-ribeiro-dev/rian-ribeiro-dev/output/stats.svg" alt="GitHub Stats" />
+  <img src="https://raw.githubusercontent.com/rian-ribeiro-dev/rian-ribeiro-dev/output/top-langs.svg" alt="Top Languages" />
 </p>
 
 <p align="center">
@@ -79,11 +79,11 @@ procura    estágio em TI, qualquer área
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=rian-ribeiro-dev&custom_title=Contribui%C3%A7%C3%B5es%20recentes&bg_color=0D1117&color=C9D1D9&title_color=58A6FF&line=58A6FF&point=F472B6&area=true&area_color=1F6FEB&hide_border=true" alt="Activity Graph" width="100%" />
+  <img src="https://raw.githubusercontent.com/rian-ribeiro-dev/rian-ribeiro-dev/output/activity.svg" alt="Activity Graph" width="100%" />
 </p>
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=rian-ribeiro-dev&theme=darkhub&no-frame=true&no-bg=true&margin-w=8&column=-1" alt="GitHub Trophies" />
+  <img src="https://raw.githubusercontent.com/rian-ribeiro-dev/rian-ribeiro-dev/output/trophies.svg" alt="GitHub Trophies" width="100%" />
 </p>
 
 <p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>
