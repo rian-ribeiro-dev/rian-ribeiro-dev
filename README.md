@@ -83,7 +83,7 @@ procura    estágio em TI, qualquer área
 </p>
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/rian-ribeiro-dev/rian-ribeiro-dev/output/trophies.svg" alt="GitHub Trophies" width="100%" />
+  <img src="https://raw.githubusercontent.com/rian-ribeiro-dev/rian-ribeiro-dev/output/trophies.svg" alt="GitHub Trophies" />
 </p>
 
 <p align="center"><img src="./assets/divider.svg" width="100%" alt="" /></p>

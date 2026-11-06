@@ -217,17 +217,19 @@ TROFEUS = [
 
 def card_trofeus(d):
     d = dict(d, n_linguagens=len(d["linguagens"]))
-    cw, ch, gap = 124, 132, 12
-    w = len(TROFEUS) * cw + (len(TROFEUS) - 1) * gap
-    h = ch
+    cw, ch, gap, colunas = 132, 132, 12, 3
+    linhas = -(-len(TROFEUS) // colunas)
+    w = colunas * cw + (colunas - 1) * gap
+    h = linhas * ch + (linhas - 1) * gap
     p = []
     for i, (nome, chave, limites) in enumerate(TROFEUS):
         val = d[chave]
         nivel = sum(val >= l for l in limites)  # 0..4
         ativo = nivel > 0
-        x = i * (cw + gap)
+        x = (i % colunas) * (cw + gap)
+        y = (i // colunas) * (ch + gap)
         cor = ROSA if nivel == 4 else AZUL if ativo else BORDA
-        p.append(f'  <g transform="translate({x} 0)">')
+        p.append(f'  <g transform="translate({x} {y})">')
         p.append(f'    <rect x=".5" y=".5" width="{cw-1}" height="{ch-1}" rx="12" fill="{BG}" stroke="{BORDA}"/>')
         # taça
         op = "1" if ativo else ".35"
