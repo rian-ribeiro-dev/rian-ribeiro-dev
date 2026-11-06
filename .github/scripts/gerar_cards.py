@@ -173,7 +173,7 @@ def card_atividade(d, n_dias=31):
         hoje = date.today()
         dias = [{"data": (hoje - timedelta(days=n_dias - 1 - i)).isoformat(), "n": 0} for i in range(n_dias)]
     valores = [x["n"] for x in dias]
-    topo = max(max(valores), 4)
+    topo = max(4, -(-max(valores) // 4) * 4)  # múltiplo de 4: eixo só com inteiros
     x0, x1, y0, y1 = 64, w - 32, 250, 74
     passo = (x1 - x0) / (len(dias) - 1)
     pts = [(x0 + i * passo, y0 - (v / topo) * (y0 - y1)) for i, v in enumerate(valores)]
@@ -186,7 +186,7 @@ def card_atividade(d, n_dias=31):
         gy = y0 - k * (y0 - y1) / 4
         val = topo * k / 4
         p.append(f'  <line x1="{x0}" x2="{x1}" y1="{gy:.1f}" y2="{gy:.1f}" stroke="{BORDA}" stroke-dasharray="3 5"/>')
-        p.append(f'  <text x="{x0-12}" y="{gy+4:.1f}" text-anchor="end" class="m" font-size="11" fill="{SUAVE}">{val:g}</text>')
+        p.append(f'  <text x="{x0-12}" y="{gy+4:.1f}" text-anchor="end" class="m" font-size="11" fill="{SUAVE}">{int(val)}</text>')
     # área + linha
     linha = " ".join(f"{x:.1f},{y:.1f}" for x, y in pts)
     p.append('  <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1">'
