@@ -1,6 +1,6 @@
 """
 Gera os cards de estatísticas do perfil (stats, linguagens, atividade e troféus)
-a partir da API do GitHub, no mesmo visual do README: preto, azul e rosa.
+a partir da API do GitHub, no mesmo visual do README: preto e tons de azul.
 
 Roda dentro do GitHub Actions (workflow "Gerar cards do perfil"), usando o
 GITHUB_TOKEN do próprio workflow. Só usa a biblioteca padrão do Python.
@@ -16,8 +16,10 @@ import urllib.request
 from datetime import date, timedelta
 from html import escape
 
-BG, BORDA, TEXTO, SUAVE, BRANCO = "#0D1117", "#30363D", "#C9D1D9", "#8B949E", "#E6EDF3"
-AZUL, AZUL_FORTE, ROSA = "#58A6FF", "#1F6FEB", "#F472B6"
+BG, BORDA, TEXTO, SUAVE, BRANCO = "#0D1117", "#1C2A44", "#C9D1D9", "#8B949E", "#E6EDF3"
+AZUL, AZUL_FORTE, NEON, MARINHO = "#60A5FA", "#2563EB", "#38BDF8", "#1E3A8A"
+# Escala de azuis para as linguagens (em vez das cores oficiais, para manter a paleta)
+AZUIS = ["#2563EB", "#38BDF8", "#1E40AF", "#60A5FA", "#93C5FD", "#1D4ED8"]
 SANS = "'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif"
 MONO = "Consolas,'SFMono-Regular',Menlo,'Courier New',monospace"
 MESES = ["jan", "fev", "mar", "abr", "mai", "jun", "jul", "ago", "set", "out", "nov", "dez"]
@@ -90,8 +92,8 @@ def buscar(login: str) -> dict:
 def svg(w, h, corpo, titulo):
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="{escape(titulo)}">
   <defs>
-    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="{AZUL}"/><stop offset="1" stop-color="{ROSA}"/></linearGradient>
-    <radialGradient id="glow" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="{AZUL_FORTE}" stop-opacity=".2"/><stop offset="1" stop-color="{AZUL_FORTE}" stop-opacity="0"/></radialGradient>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="{AZUL_FORTE}"/><stop offset="1" stop-color="{NEON}"/></linearGradient>
+    <radialGradient id="glow" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="{MARINHO}" stop-opacity=".45"/><stop offset="1" stop-color="{MARINHO}" stop-opacity="0"/></radialGradient>
     <style>.s{{font-family:{SANS}}}.m{{font-family:{MONO}}}
     .in{{animation:in .8s ease-out both}}@keyframes in{{from{{opacity:0}}to{{opacity:1}}}}</style>
   </defs>
@@ -124,7 +126,7 @@ def card_stats(d):
     p = [cabecalho("Números no GitHub")]
     for i, (rot, val) in enumerate(linhas):
         y = 78 + i * 24
-        p.append(f'  <circle cx="30" cy="{y-5}" r="3" fill="{ROSA}"/>')
+        p.append(f'  <circle cx="30" cy="{y-5}" r="3" fill="{NEON}"/>')
         p.append(f'  <text x="44" y="{y}" class="s" font-size="14" fill="{TEXTO}">{rot}</text>')
         p.append(f'  <text x="290" y="{y}" text-anchor="end" class="m" font-size="14" font-weight="700" fill="{AZUL}">{fmt(val)}</text>')
     # anel com contribuições do ano
@@ -142,6 +144,7 @@ def card_linguagens(d):
     w, h = 340, 200
     total = sum(v["bytes"] for v in d["linguagens"].values()) or 1
     top = sorted(d["linguagens"].items(), key=lambda kv: -kv[1]["bytes"])[:6]
+    top = [(nome, dict(v, cor=AZUIS[i])) for i, (nome, v) in enumerate(top)]
     p = [cabecalho("Linguagens mais usadas")]
     # barra segmentada
     x, largura = 24, w - 48
@@ -180,7 +183,7 @@ def card_atividade(d, n_dias=31):
 
     p = [cabecalho("Contribuições nos últimos 31 dias")]
     total = sum(valores)
-    p.append(f'  <text x="{w-32}" y="40" text-anchor="end" class="m" font-size="13" fill="{ROSA}">{total} no período</text>')
+    p.append(f'  <text x="{w-32}" y="40" text-anchor="end" class="m" font-size="13" fill="{NEON}">{total} no período</text>')
     # grade
     for k in range(5):
         gy = y0 - k * (y0 - y1) / 4
@@ -194,7 +197,7 @@ def card_atividade(d, n_dias=31):
     p.append(f'  <polygon points="{x0},{y0} {linha} {x1},{y0}" fill="url(#area)" class="in"/>')
     p.append(f'  <polyline points="{linha}" fill="none" stroke="{AZUL}" stroke-width="2.5" stroke-linejoin="round" class="in"/>')
     for (x, y), v in zip(pts, valores):
-        p.append(f'  <circle cx="{x:.1f}" cy="{y:.1f}" r="{3.5 if v else 2.5}" fill="{ROSA if v else BORDA}"/>')
+        p.append(f'  <circle cx="{x:.1f}" cy="{y:.1f}" r="{3.5 if v else 2.5}" fill="{NEON if v else BORDA}"/>')
     # rótulos de data (a cada 5 dias)
     for i, dia in enumerate(dias):
         if i % 5 == 0 or i == len(dias) - 1:
@@ -228,7 +231,7 @@ def card_trofeus(d):
         ativo = nivel > 0
         x = (i % colunas) * (cw + gap)
         y = (i // colunas) * (ch + gap)
-        cor = ROSA if nivel == 4 else AZUL if ativo else BORDA
+        cor = NEON if nivel == 4 else AZUL if ativo else BORDA
         p.append(f'  <g transform="translate({x} {y})">')
         p.append(f'    <rect x=".5" y=".5" width="{cw-1}" height="{ch-1}" rx="12" fill="{BG}" stroke="{BORDA}"/>')
         # taça
