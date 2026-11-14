@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="300" viewBox="0 0 820 300" role="img" aria-label="Contribuições nos últimos 31 dias">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#2563EB"/><stop offset="1" stop-color="#38BDF8"/></linearGradient>
+    <radialGradient id="glow" cx="100%" cy="0%" r="70%"><stop offset="0" stop-color="#1E3A8A" stop-opacity=".45"/><stop offset="1" stop-color="#1E3A8A" stop-opacity="0"/></radialGradient>
+    <style>.s{font-family:'Segoe UI',Ubuntu,'Helvetica Neue',Arial,sans-serif}.m{font-family:Consolas,'SFMono-Regular',Menlo,'Courier New',monospace}
+    .in{animation:in .8s ease-out both}@keyframes in{from{opacity:0}to{opacity:1}}</style>
+  </defs>
+  <rect x=".5" y=".5" width="819" height="299" rx="14" fill="#0D1117" stroke="#1C2A44"/>
+  <rect x=".5" y=".5" width="819" height="299" rx="14" fill="url(#glow)"/>
+  <rect x="24" y="23" width="4" height="22" rx="2" fill="url(#g)"/>
+  <text x="38" y="40" class="s" font-size="17" font-weight="700" fill="#E6EDF3">Contribuições nos últimos 31 dias</text>
+  <text x="788" y="40" text-anchor="end" class="m" font-size="13" fill="#38BDF8">28 no período</text>
+  <line x1="64" x2="788" y1="250.0" y2="250.0" stroke="#1C2A44" stroke-dasharray="3 5"/>
+  <text x="52" y="254.0" text-anchor="end" class="m" font-size="11" fill="#8B949E">0</text>
+  <line x1="64" x2="788" y1="206.0" y2="206.0" stroke="#1C2A44" stroke-dasharray="3 5"/>
+  <text x="52" y="210.0" text-anchor="end" class="m" font-size="11" fill="#8B949E">5</text>
+  <line x1="64" x2="788" y1="162.0" y2="162.0" stroke="#1C2A44" stroke-dasharray="3 5"/>
+  <text x="52" y="166.0" text-anchor="end" class="m" font-size="11" fill="#8B949E">10</text>
+  <line x1="64" x2="788" y1="118.0" y2="118.0" stroke="#1C2A44" stroke-dasharray="3 5"/>
+  <text x="52" y="122.0" text-anchor="end" class="m" font-size="11" fill="#8B949E">15</text>
+  <line x1="64" x2="788" y1="74.0" y2="74.0" stroke="#1C2A44" stroke-dasharray="3 5"/>
+  <text x="52" y="78.0" text-anchor="end" class="m" font-size="11" fill="#8B949E">20</text>
+  <defs><linearGradient id="area" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#2563EB" stop-opacity=".45"/><stop offset="1" stop-color="#2563EB" stop-opacity="0"/></linearGradient></defs>
+  <polygon points="64,250 64.0,250.0 88.1,250.0 112.3,250.0 136.4,250.0 160.5,250.0 184.7,250.0 208.8,250.0 232.9,250.0 257.1,250.0 281.2,250.0 305.3,250.0 329.5,250.0 353.6,250.0 377.7,100.4 401.9,250.0 426.0,250.0 450.1,250.0 474.3,250.0 498.4,153.2 522.5,250.0 546.7,250.0 570.8,250.0 594.9,250.0 619.1,250.0 643.2,250.0 667.3,250.0 691.5,250.0 715.6,250.0 739.7,250.0 763.9,250.0 788.0,250.0 788,250" fill="url(#area)" class="in"/>
+  <polyline points="64.0,250.0 88.1,250.0 112.3,250.0 136.4,250.0 160.5,250.0 184.7,250.0 208.8,250.0 232.9,250.0 257.1,250.0 281.2,250.0 305.3,250.0 329.5,250.0 353.6,250.0 377.7,100.4 401.9,250.0 426.0,250.0 450.1,250.0 474.3,250.0 498.4,153.2 522.5,250.0 546.7,250.0 570.8,250.0 594.9,250.0 619.1,250.0 643.2,250.0 667.3,250.0 691.5,250.0 715.6,250.0 739.7,250.0 763.9,250.0 788.0,250.0" fill="none" stroke="#60A5FA" stroke-width="2.5" stroke-linejoin="round" class="in"/>
+  <circle cx="64.0" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="88.1" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="112.3" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="136.4" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="160.5" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="184.7" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="208.8" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="232.9" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="257.1" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="281.2" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="305.3" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="329.5" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="353.6" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="377.7" cy="100.4" r="3.5" fill="#38BDF8"/>
+  <circle cx="401.9" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="426.0" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="450.1" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="474.3" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="498.4" cy="153.2" r="3.5" fill="#38BDF8"/>
+  <circle cx="522.5" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="546.7" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="570.8" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="594.9" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="619.1" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="643.2" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="667.3" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="691.5" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="715.6" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="739.7" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="763.9" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <circle cx="788.0" cy="250.0" r="2.5" fill="#1C2A44"/>
+  <text x="64.0" y="274" text-anchor="middle" class="m" font-size="11" fill="#8B949E">15 out</text>
+  <text x="184.7" y="274" text-anchor="middle" class="m" font-size="11" fill="#8B949E">20 out</text>
+  <text x="305.3" y="274" text-anchor="middle" class="m" font-size="11" fill="#8B949E">25 out</text>
+  <text x="426.0" y="274" text-anchor="middle" class="m" font-size="11" fill="#8B949E">30 out</text>
+  <text x="546.7" y="274" text-anchor="middle" class="m" font-size="11" fill="#8B949E">04 nov</text>
+  <text x="667.3" y="274" text-anchor="middle" class="m" font-size="11" fill="#8B949E">09 nov</text>
+  <text x="794.0" y="274" text-anchor="end" class="m" font-size="11" fill="#8B949E">14 nov</text>
+</svg>
